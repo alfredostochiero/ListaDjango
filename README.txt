@@ -1,0 +1,1 @@
+Um lista de afazeres simples em Python/Django

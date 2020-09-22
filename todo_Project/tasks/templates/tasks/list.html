@@ -1,5 +1,5 @@
 
-    <h1>Olá teste   </h1>
+    <h1>Lista de Afazeres  </h1>
     <form method="POST" action="/"> 
         {% csrf_token %}
         {{form.title}}
@@ -8,7 +8,12 @@
 
     {% for x in tasks %} 
         <div>
-            {{x}}
+            
+            <a href="{% url 'update_task' x.id %}">Update</a>
+            <p>{{x}}</p> 
+            
+           
+            
         </div>
     {% endfor %}
 
